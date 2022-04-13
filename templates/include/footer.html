@@ -6,15 +6,16 @@
                 <div class="col-md-12">
                     <ul class="conta">
                         <li> <span>Address</span> dolore magna aliqua. Ut enim ad <br> minim veniam, quis </li>
-                        <li> <span>Email</span> <a href="Javascript:void(0)">+01 12345678999<br> +01 12345678999</a>
+                        <li> <span>Email</span> <a href="Javascript:void(0)">+91 12345678999<br> +91 12345678999</a>
                         </li>
                         <li> <span>Call</span> <a href="Javascript:void(0)"> motox@gmail.com <br>demo@gmail.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
-                    <form class="newslatter_form">
-                        <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
+                    <form class="newslatter_form" method="POST">
+                        {% csrf_token %}
+                        <input class="ente" placeholder="Enter your email" type="email" name="subscriber">
                         <button class="subs_btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </form>
                 </div>
